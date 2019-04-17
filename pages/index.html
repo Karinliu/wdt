@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transavia</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="list"><a href="#main">Main</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Plan en boek</a></li>
+                <li><a href="#">Beheer je boeking</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Mijn account</a></li>
+                <li><a href="#">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <a class="shortcut" accesskey="l" aria-label="shortcut naar navigatie, windows is alt+shift+l, mac is control+alt+l" href="#list">Navigatie</a>
+        <section class="main">
+            <article>
+                <h2>Waar wil je heen?</h2>
+                <form action="myaccount.html">
+                <fieldset>
+                    <legend>Vanaf</legend>
+                    <select accesskey="b" id="routeSelection_DepartureStation" name="routeSelection.DepartureStation">
+                        <option value="">Kies je vertrekluchthaven</option>
+                        <option value="AMS">Amsterdam (Schiphol), Nederland</option>
+                        <option value="EIN">Eindhoven, Nederland</option>
+                        <option value="RTM">Rotterdam/Den Haag, Nederland</option>
+                        <option value="GRQ">Groningen, Nederland</option>
+                        <option value="AGA">Agadir, Marokko</option>
+                        <option value="AHU">Al Hoceima, Marokko</option>
+                        <option value="ALG">Algiers, Algerije</option>
+                        <option value="ALC">Alicante, Spanje</option>
+                        <option value="LEI">Almeria, Spanje</option>
+                        <option value="ATH">Athene, Griekenland</option>
+                        <option value="BCN">Barcelona, Spanje</option>
+                        <option value="BRI">Bari, Italië</option>
+                        <option value="BEY">Beiroet, Libanon</option>
+                        <option value="BEG">Belgrado, Servië</option>
+                        <option value="EGC">Bergerac, Frankrijk</option>
+                        <option value="SXF">Berlijn (Schönefeld), Duitsland</option>
+                        <option value="BLQ">Bologna, Italië</option>
+                        <option value="BDS">Brindisi, Italië</option>
+                        <option value="BUD">Budapest, Hongarije</option>
+                        <option value="CMN">Casablanca, Marokko</option>
+                        <option value="CMF">Chambéry, Frankrijk</option>
+                        <option value="CFU">Corfu, Griekenland</option>
+                        <option value="LCA">Cyprus (Larnaca), Cyprus</option>
+                        <option value="PFO">Cyprus (Paphos), Cyprus</option>
+                        <option value="VIL">Dakhla, Marokko</option>
+                        <option value="DJE">Djerba, Tunesië</option>
+                        <option value="DXB">Dubai, Verenigde Arabische Emiraten</option>
+                        <option value="DUB">Dublin, Ierland</option>
+                        <option value="DBV">Dubrovnik, Kroatië</option>
+                        <option value="EDI">Edinburgh, Verenigd Koninkrijk</option>
+                        <option value="ESU">Essaouira, Marokko</option>
+                        <option value="FAO">Faro, Portugal</option>
+                        <option value="FEZ">Fez, Marokko</option>
+                        <option value="FUE">Fuerteventura, Spanje</option>
+                        <option value="GVA">Genève, Zwitserland</option>
+                        <option value="GRO">Girona, Spanje</option>
+                        <option value="LPA">Gran Canaria (Las Palmas), Spanje</option>
+                        <option value="GNB">Grenoble, Frankrijk</option>
+                        <option value="HEL">Helsinki, Finland</option>
+                        <option value="IBZ">Ibiza, Spanje</option>
+                        <option value="INN">Innsbruck, Oostenrijk</option>
+                        <option value="SID">Kaapverdië (Sal), Kaapverdië</option>
+                        <option value="KLX">Kalamata, Griekenland</option>
+                        <option value="KTW">Katowice, Polen</option>
+                        <option value="EFL">Kefalonia (Argostoli), Griekenland</option>
+                        <option value="KLU">Klagenfurt, Oostenrijk</option>
+                        <option value="CPH">Kopenhagen, Denemarken</option>
+                        <option value="KGS">Kos, Griekenland</option>
+                        <option value="KRK">Krakau, Polen</option>
+                        <option value="CHQ">Kreta (Chania), Griekenland</option>
+                        <option value="HER">Kreta (Heraklion), Griekenland</option>
+                        <option value="SPC">La Palma, Spanje</option>
+                        <option value="SUF">Lamezia Terme, Italië</option>
+                        <option value="ACE">Lanzarote (Arrecife), Spanje</option>
+                        <option value="LIS">Lissabon, Portugal</option>
+                        <option value="LJU">Ljubljana, Slovenië</option>
+                        <option value="LYS">Lyon, Frankrijk</option>
+                        <option value="FNC">Madeira (Funchal), Portugal</option>
+                        <option value="MAD">Madrid, Spanje</option>
+                        <option value="AGP">Malaga, Spanje</option>
+                        <option value="MLA">Malta, Malta</option>
+                        <option value="RAK">Marrakech, Marokko</option>
+                        <option value="MAH">Menorca (Mahon), Spanje</option>
+                        <option value="MIR">Monastir, Tunesië</option>
+                        <option value="MPL">Montpellier, Frankrijk</option>
+                        <option value="MUC">München, Duitsland</option>
+                        <option value="JMK">Mykonos, Griekenland</option>
+                        <option value="NDR">Nador, Marokko</option>
+                        <option value="NTE">Nantes, Frankrijk</option>
+                        <option value="NAP">Napels, Italië</option>
+                        <option value="NCE">Nice, Frankrijk</option>
+                        <option value="ORN">Oran, Algerije</option>
+                        <option value="OUD">Oujda, Marokko</option>
+                        <option value="VDA">Ovda (Eilat), Israël</option>
+                        <option value="PMI">Palma de Mallorca, Spanje</option>
+                        <option value="ORY">Parijs (Orly), Frankrijk</option>
+                        <option value="PSA">Pisa, Italië</option>
+                        <option value="OPO">Porto, Portugal</option>
+                        <option value="PRG">Praag, Tsjechische Republiek</option>
+                        <option value="PVK">Preveza (Lefkas), Griekenland</option>
+                        <option value="PUY">Pula, Kroatië</option>
+                        <option value="RBA">Rabat, Marokko</option>
+                        <option value="ETM">Ramon (Eilat), Israël</option>
+                        <option value="REU">Reus, Spanje</option>
+                        <option value="KEF">Reykjavik (Keflavik), Ijsland</option>
+                        <option value="RHO">Rhodos, Griekenland</option>
+                        <option value="RJK">Rijeka, Kroatië</option>
+                        <option value="FCO">Rome (Fiumicino), Italië</option>
+                        <option value="SZG">Salzburg, Oostenrijk</option>
+                        <option value="SMI">Samos, Griekenland</option>
+                        <option value="JTR">Santorini, Griekenland</option>
+                        <option value="OLB">Sardinië (Olbia), Italië</option>
+                        <option value="SVQ">Sevilla, Spanje</option>
+                        <option value="CTA">Sicilië (Catania), Italië</option>
+                        <option value="PMO">Sicilië (Palermo), Italië</option>
+                        <option value="SOF">Sofia, Bulgarije</option>
+                        <option value="SPU">Split, Kroatië</option>
+                        <option value="ARN">Stockholm (Arlanda), Zweden</option>
+                        <option value="TNG">Tanger, Marokko</option>
+                        <option value="TLV">Tel Aviv, Israël</option>
+                        <option value="TFS">Tenerife (Zuid), Spanje</option>
+                        <option value="SKG">Thessaloniki, Griekenland</option>
+                        <option value="TIA">Tirana, Albanië</option>
+                        <option value="TIV">Tivat, Montenegro</option>
+                        <option value="TLN">Toulon, Frankrijk</option>
+                        <option value="TUN">Tunis, Tunesië</option>
+                        <option value="VLC">Valencia, Spanje</option>
+                        <option value="VCE">Venetië (Marco Polo), Italië</option>
+                        <option value="VRN">Verona, Italië</option>
+                        <option value="VOL">Volos, Griekenland</option>
+                        <option value="VIE">Wenen, Oostenrijk</option>
+                        <option value="ZAD">Zadar, Kroatië</option>
+                        <option value="ZTH">Zakynthos, Griekenland</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Naar</legend>
+                    <select name="as" id="routeSelectionMobile_ArrivalStation">
+                        <option value="">Kies je bestemming</option>
+                        <option value="AGA">Agadir, Marokko</option>
+                        <option value="AHU">Al Hoceima, Marokko</option>
+                        <option value="ALG">Algiers, Algerije</option>
+                        <option value="ALC">Alicante, Spanje</option>
+                        <option value="LEI">Almeria, Spanje</option>
+                        <option value="AMS">Amsterdam (Schiphol), Nederland</option>
+                        <option value="ATH">Athene, Griekenland</option>
+                        <option value="BCN">Barcelona, Spanje</option>
+                        <option value="BRI">Bari, Italië</option>
+                        <option value="BEY">Beiroet, Libanon</option>
+                        <option value="BEG">Belgrado, Servië</option>
+                        <option value="EGC">Bergerac, Frankrijk</option>
+                        <option value="SXF">Berlijn (Schönefeld), Duitsland</option>
+                        <option value="BLQ">Bologna, Italië</option>
+                        <option value="BDS">Brindisi, Italië</option>
+                        <option value="BUD">Budapest, Hongarije</option>
+                        <option value="CMN">Casablanca, Marokko</option>
+                        <option value="CMF">Chambéry, Frankrijk</option>
+                        <option value="CFU">Corfu, Griekenland</option>
+                        <option value="LCA">Cyprus (Larnaca), Cyprus</option>
+                        <option value="PFO">Cyprus (Paphos), Cyprus</option>
+                        <option value="VIL">Dakhla, Marokko</option>
+                        <option value="DJE">Djerba, Tunesië</option>
+                        <option value="DXB">Dubai, Verenigde Arabische Emiraten</option>
+                        <option value="DUB">Dublin, Ierland</option>
+                        <option value="DBV">Dubrovnik, Kroatië</option>
+                        <option value="EDI">Edinburgh, Verenigd Koninkrijk</option>
+                        <option value="EIN">Eindhoven, Nederland</option>
+                        <option value="ESU">Essaouira, Marokko</option>
+                        <option value="FAO">Faro, Portugal</option>
+                        <option value="FEZ">Fez, Marokko</option>
+                        <option value="FUE">Fuerteventura, Spanje</option>
+                        <option value="GVA">Genève, Zwitserland</option>
+                        <option value="GRO">Girona, Spanje</option>
+                        <option value="LPA">Gran Canaria (Las Palmas), Spanje</option>
+                        <option value="GNB">Grenoble, Frankrijk</option>
+                        <option value="GRQ">Groningen, Nederland</option>
+                        <option value="HEL">Helsinki, Finland</option>
+                        <option value="IBZ">Ibiza, Spanje</option>
+                        <option value="INN">Innsbruck, Oostenrijk</option>
+                        <option value="SID">Kaapverdië (Sal), Kaapverdië</option>
+                        <option value="KLX">Kalamata, Griekenland</option>
+                        <option value="KTW">Katowice, Polen</option>
+                        <option value="EFL">Kefalonia (Argostoli), Griekenland</option>
+                        <option value="KLU">Klagenfurt, Oostenrijk</option>
+                        <option value="CPH">Kopenhagen, Denemarken</option>
+                        <option value="KGS">Kos, Griekenland</option>
+                        <option value="KRK">Krakau, Polen</option>
+                        <option value="CHQ">Kreta (Chania), Griekenland</option>
+                        <option value="HER">Kreta (Heraklion), Griekenland</option>
+                        <option value="SPC">La Palma, Spanje</option>
+                        <option value="SUF">Lamezia Terme, Italië</option>
+                        <option value="ACE">Lanzarote (Arrecife), Spanje</option>
+                        <option value="LIS">Lissabon, Portugal</option>
+                        <option value="LJU">Ljubljana, Slovenië</option>
+                        <option value="LYS">Lyon, Frankrijk</option>
+                        <option value="FNC">Madeira (Funchal), Portugal</option>
+                        <option value="MAD">Madrid, Spanje</option>
+                        <option value="AGP">Malaga, Spanje</option>
+                        <option value="MLA">Malta, Malta</option>
+                        <option value="RAK">Marrakech, Marokko</option>
+                        <option value="MAH">Menorca (Mahon), Spanje</option>
+                        <option value="MIR">Monastir, Tunesië</option>
+                        <option value="MPL">Montpellier, Frankrijk</option>
+                        <option value="MUC">München, Duitsland</option>
+                        <option value="JMK">Mykonos, Griekenland</option>
+                        <option value="NDR">Nador, Marokko</option>
+                        <option value="NTE">Nantes, Frankrijk</option>
+                        <option value="NAP">Napels, Italië</option>
+                        <option value="NCE">Nice, Frankrijk</option>
+                        <option value="ORN">Oran, Algerije</option>
+                        <option value="OUD">Oujda, Marokko</option>
+                        <option value="VDA">Ovda (Eilat), Israël</option>
+                        <option value="PMI">Palma de Mallorca, Spanje</option>
+                        <option value="ORY">Parijs (Orly), Frankrijk</option>
+                        <option value="PSA">Pisa, Italië</option>
+                        <option value="OPO">Porto, Portugal</option>
+                        <option value="PRG">Praag, Tsjechische Republiek</option>
+                        <option value="PVK">Preveza (Lefkas), Griekenland</option>
+                        <option value="PUY">Pula, Kroatië</option>
+                        <option value="RBA">Rabat, Marokko</option>
+                        <option value="ETM">Ramon (Eilat), Israël</option>
+                        <option value="REU">Reus, Spanje</option>
+                        <option value="KEF">Reykjavik (Keflavik), Ijsland</option>
+                        <option value="RHO">Rhodos, Griekenland</option>
+                        <option value="RJK">Rijeka, Kroatië</option>
+                        <option value="FCO">Rome (Fiumicino), Italië</option>
+                        <option value="RTM">Rotterdam/Den Haag, Nederland</option>
+                        <option value="SZG">Salzburg, Oostenrijk</option>
+                        <option value="SMI">Samos, Griekenland</option>
+                        <option value="JTR">Santorini, Griekenland</option>
+                        <option value="OLB">Sardinië (Olbia), Italië</option>
+                        <option value="SVQ">Sevilla, Spanje</option>
+                        <option value="CTA">Sicilië (Catania), Italië</option>
+                        <option value="PMO">Sicilië (Palermo), Italië</option>
+                        <option value="SOF">Sofia, Bulgarije</option>
+                        <option value="SPU">Split, Kroatië</option>
+                        <option value="ARN">Stockholm (Arlanda), Zweden</option>
+                        <option value="TNG">Tanger, Marokko</option>
+                        <option value="TLV">Tel Aviv, Israël</option>
+                        <option value="TFS">Tenerife (Zuid), Spanje</option>
+                        <option value="SKG">Thessaloniki, Griekenland</option>
+                        <option value="TIA">Tirana, Albanië</option>
+                        <option value="TIV">Tivat, Montenegro</option>
+                        <option value="TLN">Toulon, Frankrijk</option>
+                        <option value="TUN">Tunis, Tunesië</option>
+                        <option value="VLC">Valencia, Spanje</option>
+                        <option value="VCE">Venetië (Marco Polo), Italië</option>
+                        <option value="VRN">Verona, Italië</option>
+                        <option value="VOL">Volos, Griekenland</option>
+                        <option value="VIE">Wenen, Oostenrijk</option>
+                        <option value="ZAD">Zadar, Kroatië</option>
+                        <option value="ZTH">Zakynthos, Griekenland</option>
+                    </select>
+                </fieldset>
+                <fieldset class="nowidth">
+                    <legend>Vertrek op</legend>
+                    <label for="dateSelection_OutboundDate_Day">Dag</label>
+                    <select class="date-day" id="dateSelection_OutboundDate_Day" name="dateSelection.OutboundDate.Day">
+                        <option value="">DD</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <label for="dateSelection_OutboundDate_Month">Maand</label>
+                    <select id="dateSelection_OutboundDate_Month" name="dateSelection.OutboundDate.Month">
+                        <option value="">MM</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <label class="is-hidden" for="dateSelection_OutboundDate_Year">Jaar</label>
+                    <select class="date-year" id="dateSelection_OutboundDate_Year" name="dateSelection.OutboundDate.Year">
+                        <option value="">YYYY</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </fieldset>
+                <fieldset class="nowidth">
+                    <legend>Terug op</legend>
+                    <label for="dateSelection_OutboundDate_Day">Dag</label>
+                    <select class="date-day" id="dateSelection_OutboundDate_Day" name="dateSelection.OutboundDate.Day">
+                        <option value="">DD</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <label class="is-hidden" for="dateSelection_OutboundDate_Month">Maand</label>
+                    <select class="date-month" id="dateSelection_OutboundDate_Month" name="dateSelection.OutboundDate.Month">
+                        <option value="">MM</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <label class="is-hidden" for="dateSelection_OutboundDate_Year">Jaar</label>
+                    <select class="date-year" id="dateSelection_OutboundDate_Year" name="dateSelection.OutboundDate.Year">
+                        <option value="">YYYY</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label for="passengers">Passengers</label>
+                    <input id="passengers" type="text">
+                </fieldset>
+                <fieldset>
+                    <label for="adults">Volwassenen</label>
+                    <input id="adults" type="text">
+                    <label for="kids">Kinderen</label>
+                    <input id="kids" type="text">
+                    <label for="baby">Baby's</label>
+                    <input id="baby" type="text">
+                </fieldset>
+                <button class="button button-primary" type="submit">
+                    <span class="icon-font icon-search"></span>&nbsp; Zoeken
+                </button>
+            </form>
+            </article>
+        </section>
+    </main>
+    <script src="../src/js/index.js"></script>
+</body>
+
+</html>
