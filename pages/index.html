@@ -22,12 +22,12 @@
         </nav>
     </header>
     <main>
-        <a class="shortcut" accesskey="l" aria-label="shortcut naar navigatie, windows is alt+shift+l, mac is control+alt+l" href="#list">Navigatie</a>
+        <a id="main" class="shortcut" accesskey="l" aria-label="shortcut naar navigatie, windows alt+shift+l" href="#list">Navigatie</a>
         <section class="main">
             <article>
                 <h2>Waar wil je heen?</h2>
                 <form action="myaccount.html">
-                <fieldset>
+                <div>
                     <legend>Vanaf</legend>
                     <select accesskey="b" id="routeSelection_DepartureStation" name="routeSelection.DepartureStation">
                         <option value="">Kies je vertrekluchthaven</option>
@@ -145,8 +145,8 @@
                         <option value="ZAD">Zadar, Kroatië</option>
                         <option value="ZTH">Zakynthos, Griekenland</option>
                     </select>
-                </fieldset>
-                <fieldset>
+                </div>
+                <div>
                     <legend>Naar</legend>
                     <select name="as" id="routeSelectionMobile_ArrivalStation">
                         <option value="">Kies je bestemming</option>
@@ -264,12 +264,12 @@
                         <option value="ZAD">Zadar, Kroatië</option>
                         <option value="ZTH">Zakynthos, Griekenland</option>
                     </select>
-                </fieldset>
-                <fieldset class="nowidth">
+                </div>
+                <div class="nowidth">
                     <legend>Vertrek op</legend>
-                    <label for="dateSelection_OutboundDate_Day">Dag</label>
-                    <select class="date-day" id="dateSelection_OutboundDate_Day" name="dateSelection.OutboundDate.Day">
-                        <option value="">DD</option>
+                    <label for="dateSelection_go_Day">Dag</label>
+                    <select class="date-day" id="dateSelection_go_Day" name="dateSelection.go.Day">
+                        <option value="">Vertrek op</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -302,9 +302,9 @@
                         <option value="30">30</option>
                         <option value="31">31</option>
                     </select>
-                    <label for="dateSelection_OutboundDate_Month">Maand</label>
-                    <select id="dateSelection_OutboundDate_Month" name="dateSelection.OutboundDate.Month">
-                        <option value="">MM</option>
+                    <label class="is-hidden" for="dateSelection_go_Month">Maand</label>
+                    <select class="date-month" id="dateSelection_go_Month" name="dateSelection.go.Month">
+                        <option value="">Maand</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -318,18 +318,18 @@
                         <option value="11">11</option>
                         <option value="12">12</option>
                     </select>
-                    <label class="is-hidden" for="dateSelection_OutboundDate_Year">Jaar</label>
-                    <select class="date-year" id="dateSelection_OutboundDate_Year" name="dateSelection.OutboundDate.Year">
-                        <option value="">YYYY</option>
+                    <label class="is-hidden" for="dateSelection_go_Year">Jaar</label>
+                    <select class="date-year" id="dateSelection_go_Year" name="dateSelection.go.Year">
+                        <option value="">Jaar</option>
                         <option value="2019">2019</option>
                         <option value="2020">2020</option>
                     </select>
-                </fieldset>
-                <fieldset class="nowidth">
+                </div>
+                <div class="nowidth">
                     <legend>Terug op</legend>
                     <label for="dateSelection_OutboundDate_Day">Dag</label>
                     <select class="date-day" id="dateSelection_OutboundDate_Day" name="dateSelection.OutboundDate.Day">
-                        <option value="">DD</option>
+                        <option value="">Vertrek op</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -364,7 +364,7 @@
                     </select>
                     <label class="is-hidden" for="dateSelection_OutboundDate_Month">Maand</label>
                     <select class="date-month" id="dateSelection_OutboundDate_Month" name="dateSelection.OutboundDate.Month">
-                        <option value="">MM</option>
+                        <option value="">Maand</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -380,23 +380,23 @@
                     </select>
                     <label class="is-hidden" for="dateSelection_OutboundDate_Year">Jaar</label>
                     <select class="date-year" id="dateSelection_OutboundDate_Year" name="dateSelection.OutboundDate.Year">
-                        <option value="">YYYY</option>
+                        <option value="">Jaar</option>
                         <option value="2019">2019</option>
                         <option value="2020">2020</option>
                     </select>
-                </fieldset>
-                <fieldset>
+                </div>
+<!--                 <div>
                     <label for="passengers">Passengers</label>
                     <input id="passengers" type="text">
-                </fieldset>
-                <fieldset>
+                </div>
+                <div>
                     <label for="adults">Volwassenen</label>
                     <input id="adults" type="text">
                     <label for="kids">Kinderen</label>
                     <input id="kids" type="text">
                     <label for="baby">Baby's</label>
                     <input id="baby" type="text">
-                </fieldset>
+                </div> -->
                 <button class="button button-primary" type="submit">
                     <span class="icon-font icon-search"></span>&nbsp; Zoeken
                 </button>

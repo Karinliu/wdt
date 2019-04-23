@@ -7,40 +7,110 @@
     let playButton = document.getElementById("playbtn");
     let form = document.getElementById("myForm");
     let forminputs = document.querySelectorAll("input");
+    // let name = document.querySelector("#full-name")
 
-    console.log(forminputs);
+    // console.log(name);
 
-    forminputs.forEach(function(inputs) {
-        console.log(inputs)
-        inputs.addEventListener("input", play);
+    // forminputs.forEach(function(inputs) {
+    //     console.log(inputs)
+    //     inputs.addEventListener("input", play);
 
-        function play() {
-            if (inputs.checkValidity() === false) {
-                errorFile.play();
-                console.log("het is fout!")
-                // return false
-            } else {
-                succesFile.play();
-                // return true
-                console.log("het is goed")
-            }
+    //     function play() {
+    //         if (inputs.checkValidity() === false) {
+    //             errorFile.play();
+    //             console.log("het is fout!")
+    //             // return false
+    //         } else {
+    //             succesFile.play();
+    //             // return true
+    //             console.log("het is goed")
+    //         }
+    //     }
+    // })
+
+    //setup before functions
+    let typingTimer;                //timer identifier
+    let doneTypingInterval = 1000;  //time in ms (5 seconds)
+    let firstname = document.querySelector("#full-name");
+    let lastname = document.querySelector("#last-name");
+    let email = document.querySelector("#email-input");
+    let mobile = document.querySelector("#mobile");
+
+    //on keyup, start the countdown
+    firstname.addEventListener('input', () => {
+        clearTimeout(typingTimer);
+        if (firstname.value) {
+            typingTimer = setTimeout(doneTypingFirstname, doneTypingInterval);
         }
-    })
+    });
+        //user is "finished typing," do something
+    function doneTypingFirstname () {
+        if(firstname.value !== "Larissa"){
+          errorFile.play();
+          console.log("het is fout!")
+          // return false
+      }else{
+        succesFile.play();
+        // return true
+        console.log("het is goed")
+      }
+    }
 
-    // name.addEventListener("input", handlePlayButton);
+    lastname.addEventListener('input', () => {
+        clearTimeout(typingTimer);
+        if (lastname.value) {
+            typingTimer = setTimeout(doneTypingLastname, doneTypingInterval);
+        }
+    });
 
-    // console.log(name)
+    function doneTypingLastname() {
+        if(lastname.value !== "Klaassen"){
+          errorFile.play();
+          console.log("het is fout!")
+          // return false
+      }else{
+        succesFile.play();
+        // return true
+        console.log("het is goed")
+      }
+    }
 
-    // function handlePlayButton() {
-    //   if(name.checkValidity() === false){
-    //       errorFile.play();
-    //       console.log("het is fout!")
-    //       // return false
-    //   }else{
-    //     succesFile.play();
-    //     // return true
-    //     console.log("het is goed")
-    //   }
-    // }
+    email.addEventListener('input', () => {
+        clearTimeout(typingTimer);
+        if (email.value) {
+            typingTimer = setTimeout(doneTypingEmail, doneTypingInterval);
+        }
+    });
+
+    function doneTypingEmail() {
+        if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)){
+          succesFile.play();
+          console.log("het is goed!")
+          return true
+      }else{
+        errorFile.play();
+        // return true
+        console.log("het is fout")
+        return false
+      }
+    }
+
+    mobile.addEventListener('input', () => {
+        clearTimeout(typingTimer);
+        if (mobile.value) {
+            typingTimer = setTimeout(doneTypingMobile, doneTypingInterval);
+        }
+    });
+
+    function doneTypingMobile() {
+        if(mobile.value.length===10){
+          succesFile.play();
+          console.log("het is goed!")
+      }else{
+        errorFile.play();
+        // return true
+        console.log("het is fout")
+      }
+    }
 
 })();
