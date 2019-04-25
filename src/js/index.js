@@ -9,24 +9,6 @@
     let forminputs = document.querySelectorAll("input");
     // let name = document.querySelector("#full-name")
 
-    // console.log(name);
-
-    // forminputs.forEach(function(inputs) {
-    //     console.log(inputs)
-    //     inputs.addEventListener("input", play);
-
-    //     function play() {
-    //         if (inputs.checkValidity() === false) {
-    //             errorFile.play();
-    //             console.log("het is fout!")
-    //             // return false
-    //         } else {
-    //             succesFile.play();
-    //             // return true
-    //             console.log("het is goed")
-    //         }
-    //     }
-    // })
 
     //setup before functions
     let typingTimer;                //timer identifier
