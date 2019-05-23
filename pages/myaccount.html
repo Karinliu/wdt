@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
@@ -22,12 +22,12 @@
         </nav>
     </header>
     <main>
-        <a id="main" accesskey="l" aria-label="terug naar navigatie, windows is alt+shift+l" href="#list">Navigatie</a>
+        <a id="main" class="shortcut" accesskey="l" aria-label="shortcut naar navigatie, windows alt+shift+l" href="#list">Navigatie</a>
         <section class="main">
             <article>
                 <h2>Mijn gegevens</h2>
-                <form action="index.html" id="form" class="validate" name="myForm">
-                    <div class="nowidth">
+                <form action="index.html" id="myForm" class="validate" name="myForm">
+                    <div tabindex="0" class="nowidth">
                         <legend>Geslacht </legend>
                         <label for="woman">Vrouw</label>
                         <input type="radio" id="woman" name="gender" value="woman">
@@ -36,15 +36,37 @@
                     </div>
                     <div>
                         <label for="full-name">Voornaam</label>
-                    <input type="text" name="full-name" id="full-name" placeholder="Voornaam" required />
-                    <label for="last-name">Achternaam</label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Achternaam" required />
-                    <label for="email-input">Email</label>
-                    <input type="email" name="email-input" id="email-input" placeholder="example@hotmail.com" required />
-                    <label for="mobile">Mobiel telefoonnummer</label>
-                    <input type="number" name="mobile" id="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                        <input tabindex="0" type="text" name="full-name" id="full-name" placeholder="Voornaam" required />
+                        <div tabindex="0" id="filledname">
+                        </div>
+                        <label for="last-name">Achternaam</label>
+                        <input tabindex="0" type="text" name="last-name" id="last-name" placeholder="Achternaam" required />
+                        <div tabindex="0" id="filledlastname">
+                        </div>
+                        <label for="email-input">Email</label>
+                        <input tabindex="0" type="email" name="email-input" id="email-input" placeholder="example@hotmail.com" required />
+                        <div tabindex="0" id="filledemail">
+                        </div>
+                        <label for="mobile">Mobiel telefoonnummer</label>
+                        <input tabindex="0" type="number" name="mobile" id="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
                     </div>
-                    <button aria-label="boink boink, button is focused">submit</button>
+                    <label for="dogrequest">Aanvraagformulier hulphond</label>
+                    <input type="checkbox" tabindex="0" id="dogrequest">
+                    <div class="dogrequestForm hidden">
+                        <label for="dog-name">Voornaam</label>
+                        <input tabindex="0" name="dog-name" id="dog-name" placeholder="Naam van het dier"  />
+                        <div tabindex="0" id="filled-dogname"> </div>
+                        <label for="breed-name">Ras van de hond</label>
+                        <input tabindex="0" name="breed-name" id="breed-name" />
+                        <div tabindex="0" id="filled-breed"> </div>
+                        <label for="dog-dogweight">Gewicht</label>
+                        <input type="number" tabindex="0" name="dog-dogweight" id="dogweight" placeholder="Gewicht" />
+                        <div tabindex="0" id="filleddog-dogweight"> </div>
+                        <label for="opmerkingen">Opmerkingen</label>
+                        <textarea name="opmerkingen" id="opmerkingen" cols="30" rows="10"></textarea>
+                    </div>
+                    </div>
+                    <button id="submitForm">submit uw vlucht</button>
                 </form>
             </article>
         </section>

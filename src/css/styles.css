@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	font-size: 1.2em;
 	font-family: "trebuchet ms",sans-serif;
 }
 
@@ -44,9 +45,21 @@ nav ul li a{
 main .main {
 	padding-top: 4em;
 	padding-bottom: 1em;
-	background-image: url(../images/header.jpg);
+	/*background-image: url(../images/header.jpg);*/
 	background-size: cover;
 	height: 80vh;
+}
+
+#selectFlight div{
+	margin-bottom: 1em;
+}
+
+#selectFlight div legend{
+	margin-bottom: 0.5em;
+}
+
+select{
+	font-size: 0.7em;
 }
 
 .main h2{
@@ -60,9 +73,9 @@ main .main {
 	background: white;
 	opacity: 0.9;
     width: 45%;
-    margin: 3em auto;
+    margin: 1em auto;
     border-radius: 1em;
-    padding: 2em;
+    /*padding: 2em;*/
 }
 
 .main form{
@@ -121,7 +134,24 @@ input{
 	margin-top: 5em;
 }
 
+#opmerkingen{
+	width: 100%;
+    font-size: 1.1em;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    height: 4em;
+}
+
+button{
+	width: 8em;
+    height: 2.5em;
+    font-size: 1em;
+    border-radius: 0.5em;
+}
+
 button:hover{
+	transform: scale(0.9);
 	animation: bounce 0.75s
 }
 
@@ -129,7 +159,11 @@ button:focus{
 	animation: bounce 0.75s
 }
 
-@keyframes bounce {
+.hidden{
+	display: none;
+}
+
+/*@keyframes bounce {
         0% {
     transform: scale(1,1) translate(0px, 0px);
   }
@@ -145,7 +179,7 @@ button:focus{
  100% {
     transform: scale(1,1) translate(0px, 0px);
   }
-}
+}*/
 /*#playbtn{
 	display: none;
 }*/
